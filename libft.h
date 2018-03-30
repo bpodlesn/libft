@@ -6,12 +6,13 @@
 /*   By: bpodlesn <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2017/11/06 18:11:07 by bpodlesn          #+#    #+#             */
-/*   Updated: 2017/11/14 16:18:55 by bpodlesn         ###   ########.fr       */
+/*   Updated: 2018/02/02 16:40:39 by bpodlesn         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
+# define BUFF_SIZE 1000
 
 # include <string.h>
 # include <unistd.h>
@@ -25,6 +26,7 @@ typedef	struct		s_list
 }					t_list;
 
 int					ft_atoi(const char *str);
+double				ft_atoi1(char *str, int *k);
 void				ft_bzero(void *s, size_t n);
 int					ft_isalnum(int c);
 int					ft_isalpha(int c);
@@ -62,7 +64,7 @@ int					ft_strncmp(const char *s1, const char *s2, size_t n);
 char				*ft_strncpy(char *dst, const char *src, size_t len);
 char				*ft_strnew(size_t size);
 char				*ft_strnstr(const char *big, const char *little,
-		size_t len);
+					size_t len);
 char				*ft_strrchr(const char *string, int c);
 char				*ft_strstr(const char *big, const char *little);
 int					ft_tolower(int c);
@@ -85,5 +87,6 @@ void				ft_lstdel(t_list **alst, void (*del)(void *, size_t));
 void				ft_lstadd(t_list **alst, t_list *new);
 void				ft_lstiter(t_list *lst, void (*f)(t_list *elem));
 t_list				*ft_lstmap(t_list *lst, t_list *(*f)(t_list *elem));
+int					get_next_line(int fd, char **line);
 
 #endif

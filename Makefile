@@ -6,7 +6,7 @@
 #    By: bpodlesn <marvin@42.fr>                    +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2017/10/26 13:24:52 by bpodlesn          #+#    #+#              #
-#    Updated: 2017/11/14 16:19:50 by bpodlesn         ###   ########.fr        #
+#    Updated: 2018/02/02 16:40:00 by bpodlesn         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -43,6 +43,7 @@ SRCS = ft_putchar.c \
 	   ft_toupper.c \
 	   ft_tolower.c \
 	   ft_atoi.c \
+	   ft_atoi1.c \
 	   ft_memalloc.c \
 	   ft_memdel.c \
 	   ft_strnew.c \
@@ -71,6 +72,7 @@ SRCS = ft_putchar.c \
 	   ft_lstadd.c \
 	   ft_lstiter.c \
 	   ft_lstmap.c \
+	   get_next_line.c \
 
 OFILES = ft_putchar.o \
 		 ft_putstr.o \
@@ -103,6 +105,7 @@ OFILES = ft_putchar.o \
 		 ft_toupper.o \
 		 ft_tolower.o \
 		 ft_atoi.o \
+		 ft_atoi1.o \
 		 ft_memalloc.o \
 		 ft_memdel.o \
 		 ft_strnew.o \
@@ -131,6 +134,7 @@ OFILES = ft_putchar.o \
 		 ft_lstadd.o \
 		 ft_lstiter.o \
 		 ft_lstmap.o \
+		 get_next_line.o \
 
 HEADERS = -I libft.h
 
